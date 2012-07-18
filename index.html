@@ -1,0 +1,68 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="jquery.tree.css" rel="stylesheet" type="text/css">
+    <script src="jquery.tree.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#lista').arvore({checkbox:true});
+        $('#btn_abrir').click(function(){
+          $('#lista').trigger('expandir');
+        });
+        $('#btn_fechar').click(function(){
+          $('#lista').trigger('retrair');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="lista-arvore">
+    <ul id="lista">
+      <li><a>Materiais</a>
+        <ul>
+          <li><a>Caneta</a></li>
+          <li><a>Lapis</a></li>
+          <li><a>Borracha</a></li>
+          <li><a>Regua</a></li>
+          <li><a>Apontador</a></li>
+        </ul>
+      </li>
+      <li><a>Carros</a>
+        <ul>
+          <li><a>Peugeot</a></li>
+          <li><a>Uno</a></li>
+          <li><a>Palio</a></li>
+          <li><a>Scenic</a></li>
+          <li><a>Chevette</a></li>
+        </ul>
+      </li>
+      <li><a>Futebol</a>
+        <ul>
+          <li><a>Jogador</a>
+            <ul>
+              <li><a>Messi</a></li>
+              <li><a>Ronaldo</a></li>
+              <li><a>Victor</a></li>
+              <li><a>Borges</a></li>
+              <li><a>Paula</a></li>
+            </ul>
+          </li>
+          <li><a>Campo</a></li>
+          <li><a>Bola</a></li>
+          <li><a>Estadio</a></li>
+          <li><a>Bandeirinha</a></li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+    <br>
+    <input type="button" value="Abrir" id="btn_abrir"> <input type="button" value="Fechar" id="btn_fechar">
+  </body>
+</html>

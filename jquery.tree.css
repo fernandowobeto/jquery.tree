@@ -1,0 +1,9 @@
+ul.jquery-tree{
+  list-style: none;
+  -moz-user-select:none;
+  cursor:pointer;
+}
+ul.jquery-tree > li ul{display:none;}
+ul.jquery-tree li{ list-style-position: inside;}
+ul.jquery-tree li.pasta{ list-style-image: url("pasta.png");}
+ul.jquery-tree li.arquivo{ list-style-image: url("arquivo.png");}
